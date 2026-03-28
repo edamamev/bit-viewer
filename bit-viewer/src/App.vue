@@ -1,4 +1,16 @@
-<script setup></script>
+
+
+
+<script setup>
+  import { reactive } from 'vuejs'
+
+  const counter = reactive({
+    count: 0
+  })
+
+  console.log(counter.count)
+  counter.count++
+</script>
 
 <template>
   <h1>You did it!</h1>
@@ -8,4 +20,4 @@
   </p>
 </template>
 
-<style scoped></style>
+<style scoped></style> 
